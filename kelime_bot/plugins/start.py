@@ -9,17 +9,6 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 
-keyboard = InlineKeyboardMarkup([
-    [
-        InlineKeyboardButton("➕ Grubuna Ekle", url=f"http://t.me/KelimeHazinesiBot?startgroup=new")
-    ],
-    [
-        InlineKeyboardButton("🇹🇷 Sahibim", url="https://t.me/nevarevladim"),
-        InlineKeyboardButton("💬 Chat", url="https://t.me/+0kf_3zSzsCszZWJk"),
-    ]
-])
-
-
 START = """
 **🔮 Merhaba, Kelimeleri tersten bulma oyununa hoş geldin..**
 
@@ -28,10 +17,10 @@ START = """
 
 HELP = """
 **✌️ Komutlar Menüsüne Hoşgeldiniz.**
-/game - Oyunu başlatmak için..
+/myt - Oyunu başlatmak için..
 /pass - Üç adet hakkınız mevcut, oyunu geçmek için.. 
 /skor - Oyuncular arasındaki rekabet bilgisi..
-/cancel - Oyundan çıkmak için gerekli olan komuttur.. 
+/sonlandir - Oyundan çıkmak için gerekli olan komuttur.. 
 """
 
 # Komutlar. 
@@ -44,7 +33,7 @@ async def help(bot, message):
   await message.reply_photo("https://i.ibb.co/K6QTywd/images-17.jpg",caption=HELP) 
 
 # Oyunu başlat. 
-@Client.on_message(filters.command("game")) 
+@Client.on_message(filters.command("myt")) 
 async def kelimeoyun(c:Client, m:Message):
     global oyun
     aktif = False

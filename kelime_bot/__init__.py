@@ -18,7 +18,7 @@ LOGGER = logging.getLogger(__name__)
 API_ID = "2930013"
 API_HASH = "7cab92dcd979add511b79d693775e17d"
 TOKEN = "6803669543:AAF3IVN9OQvi0DFESZSX2Nc4W2YGFBO6__c" 
-USERNAME = "1527476177"
+USERNAME = "MytGrupBot"
 
 
 
@@ -47,5 +47,5 @@ rating = {}
 
 # !!!!!!!!!!!!!! DEĞİŞTİR KESİNLİKLE !!!!!!!!!!!!!!!!
 #      SAHİBİN USER ID'Sİ
-OWNER_ID = 974246367
+OWNER_ID = 1527476177
 

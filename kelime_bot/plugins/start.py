@@ -17,7 +17,7 @@ START = """
 
 HELP = """
 **✌️ Komutlar Menüsüne Hoşgeldiniz.**
-/myt - Oyunu başlatmak için..
+/kelime - Oyunu başlatmak için..
 /pass - Üç adet hakkınız mevcut, oyunu geçmek için.. 
 /skor - Oyuncular arasındaki rekabet bilgisi..
 /sonlandir - Oyundan çıkmak için gerekli olan komuttur.. 
@@ -33,7 +33,7 @@ async def help(bot, message):
   await message.reply_photo("https://i.ibb.co/K6QTywd/images-17.jpg",caption=HELP) 
 
 # Oyunu başlat. 
-@Client.on_message(filters.command("myt")) 
+@Client.on_message(filters.command("kelime")) 
 async def kelimeoyun(c:Client, m:Message):
     global oyun
     aktif = False

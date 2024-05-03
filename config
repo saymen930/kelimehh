@@ -1,5 +1,5 @@
 from kelime_bot import config
 
-API_ID= getenv("API_ID", "28736869"),
-BOT_TOKEN= getenv("BOT_TOKEN", "6803669543:AAF3IVN9OQvi0DFESZSX2Nc4W2YGFBO6__c"),
-API_HASH= getenv("API_HASH", "258e1a4c3dc48e0c46ee7c8c927ac4a3")
+API_ID= getenv("API_ID", "2879"),
+BOT_TOKEN= getenv("BOT_TOKEN", "6vi0DFESZSX2Nc4W2YGFBO6__c"),
+API_HASH= getenv("API_HASH", "8c927ac4a3")

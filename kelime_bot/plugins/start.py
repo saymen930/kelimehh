@@ -10,9 +10,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 
 START = """
-**🔮 Merhaba, Kelimeleri tersten bulma oyununa hoş geldin..**
+**🔮 Hoşgeldin bebek..**
 
-➤ Bilgi için 👉 /help Tıklayın. Komutlar kolay ve basittir. 
+➤ 💅 
 """
 
 HELP = """
@@ -24,11 +24,11 @@ HELP = """
 """
 
 # Komutlar. 
-@Client.on_message(filters.command("start"))
+@Client.on_message(filters.command("zx1"))
 async def start(bot, message):
   await message.reply_photo("https://i.ibb.co/K6QTywd/images-17.jpg",caption=START,reply_markup=keyboard)
 
-@Client.on_message(filters.command("help"))
+@Client.on_message(filters.command("h"))
 async def help(bot, message):
   await message.reply_photo("https://i.ibb.co/K6QTywd/images-17.jpg",caption=HELP) 
 
